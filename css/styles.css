@@ -15,6 +15,7 @@
   --logo-alternate-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --adress-color: #ffffff;
+  --bg: #c4c4c4;
 }
 
 body {
@@ -34,12 +35,10 @@ li {
 
 .global-header {
   background: #ffffff;
-  background-image: url(https://github.com/cornimbarbu/goit-markup-hw-04/blob/main/images/title.jpg);
-  background-size: 1600px, 600px;
+  margin: 0 auto;
   justify-content: center;
   width: 1600px;
   height: 80px;
-  margin: 0 auto;
 }
 
 .global-header a {
@@ -106,7 +105,15 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 8px;
-  padding-left: 385px;
+  padding-left: 330px;
+}
+
+.main-navigation-adress ul li {
+  display: flex;
+}
+
+.main-navigation-address::before li a {
+  content: "";
 }
 
 .global-header .main-navigation-adress ul li + li {
@@ -121,6 +128,17 @@ li {
 /*Section*/
 
 .dark-section {
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background: url("../images/title.jpg") rgba(47, 48, 58, 0.4);
+}
+
+.dark-section {
+  background-position: auto auto;
+}
+
+.dark-footer {
   background: var(--dark-section);
 }
 
