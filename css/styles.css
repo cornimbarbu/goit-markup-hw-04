@@ -54,6 +54,7 @@ li {
 
 .logo {
   display: flex;
+  justify-content: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -85,7 +86,8 @@ li {
 
 .main-navigation {
   display: flex;
-  padding-left: 93px;
+  padding-right: 0;
+  margin-left: 93px;
 }
 
 .main-navigation ul {
@@ -93,27 +95,40 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0px;
-  padding-top: 8px;
+  align-items: center;
 }
 
 .main-navigation ul li + li {
   margin-left: 50px;
 }
 
+.main-navigation-adress {
+  display: flex;
+  align-items: center;
+  margin-left: 330px;
+}
+
 .main-navigation-adress ul {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 8px;
-  padding-left: 330px;
+  padding-right: 0px;
+  padding-left: 0;
 }
 
 .main-navigation-adress ul li {
   display: flex;
+  align-items: center;
 }
 
-.main-navigation-address::before li a {
-  content: "";
+.main-navigation-adress ul li a {
+  padding-left: 10px;
+}
+
+.icon :hover,
+.icon :focus {
+  cursor: pointer;
+  color: var(--link-active-color);
 }
 
 .global-header .main-navigation-adress ul li + li {
