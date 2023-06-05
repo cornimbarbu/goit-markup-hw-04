@@ -125,12 +125,6 @@ li {
   padding-left: 10px;
 }
 
-.icon :hover,
-.icon :focus {
-  cursor: pointer;
-  color: var(--link-active-color);
-}
-
 .global-header .main-navigation-adress ul li + li {
   margin-left: 40px;
 }
@@ -188,8 +182,8 @@ h4 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 h5 {
@@ -294,14 +288,15 @@ h5 {
   color: var(--text-color);
 }
 
-.info-section p {
-  margin-top: 10;
-  margin-bottom: 94px;
-}
-
 .info-section-text {
   display: flex;
   justify-content: center;
+  margin-bottom: 94px;
+}
+
+.info-section-text p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .info-section-text ul {
@@ -317,6 +312,11 @@ h5 {
 
 .info-section-text ul li + li {
   margin-left: 30px;
+}
+
+.benefits-icon {
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .info-section-images {
@@ -423,6 +423,38 @@ h5 {
   margin-bottom: 0;
   text-align: left;
   margin-left: 24px;
+}
+
+.social-links li:hover {
+  background: #2196f3;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  vertical-align: 0 auto;
+}
+
+.clienti h2 {
+  margin-top: 94px;
+}
+
+.clienti-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  padding-inline-start: 0;
+}
+
+.clienti-logo li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.clienti-logo svg {
+  margin-top: 16px;
+  margin-left: 32px;
 }
 
 /*Footer*/
