@@ -135,7 +135,7 @@ li {
   color: var(--link-active-color);
 }
 
-/*Section*/
+/*Sections*/
 
 .dark-section {
   width: 1600px;
@@ -150,6 +150,8 @@ li {
 
 .dark-footer {
   background: var(--dark-section);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 h1,
@@ -261,7 +263,8 @@ h5 {
 .filter-button:hover {
   background-color: var(--link-active-color);
   color: #ffffff;
-  box-shadow: 3px 5px 4px rgba(224, 25, 25, 0.719);
+  box-shadow: 4px 8px 3px rgba(0, 0, 0, 0.12), 3px 6px 1px rgba(0, 0, 0, 0.14),
+    2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .filter-menu ul {
@@ -282,12 +285,14 @@ h5 {
 }
 
 .info-section {
-  background: var(--info-section-color);
+  background: #ffffff;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .info-section-text {
@@ -344,6 +349,8 @@ h5 {
 
 .team-section {
   background: var(--team-section-color);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .team-section ul {
@@ -353,6 +360,10 @@ h5 {
   padding-left: 0;
   padding-bottom: 94px;
   justify-content: center;
+}
+
+.team card {
+  background: var(--team-section-color);
 }
 
 .team-section li {
@@ -381,29 +392,44 @@ h5 {
   margin-bottom: 10px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links a {
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  cursor: pointer;
+  fill: #ffffff;
+  background: #2196f3;
+}
+
+.social-links svg:hover,
+.social-links svg:focus {
+  color: #ffffff;
+}
+
 .team-heading {
   padding-top: 94px;
   padding-bottom: 50px;
-}
-
-.social-links {
-  margin-top: 28px;
-  height: 44px;
-}
-
-.social-links a + a {
-  margin-left: 32px;
-}
-
-.social-links svg:hover {
-  background: #2196f3;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  padding: 12px 12px;
-  fill: #eeeeee;
-  stroke: #eeeeee;
-  cursor: pointer;
 }
 
 .capabilities {
@@ -421,6 +447,7 @@ h5 {
 .capabilities li:hover {
   box-shadow: 4px 8px 3px rgba(0, 0, 0, 0.12), 3px 6px 1px rgba(0, 0, 0, 0.14),
     2px 4px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .capabilities p {
@@ -458,6 +485,11 @@ h5 {
   margin-left: 24px;
 }
 
+.clienti {
+  width: 1600px;
+  margin: 0 auto;
+}
+
 .clienti h2 {
   margin-top: 94px;
 }
@@ -480,6 +512,15 @@ h5 {
 .clienti-logo svg {
   margin-top: 16px;
   margin-left: 32px;
+}
+
+.clienti-logo li:hover {
+  cursor: pointer;
+  border: 1px solid #2196f3;
+}
+
+.clienti-logo svg use:hover {
+  fill: #2196f3;
 }
 
 /*Footer*/
