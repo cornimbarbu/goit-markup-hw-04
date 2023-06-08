@@ -39,6 +39,7 @@ li {
   justify-content: center;
   width: 1600px;
   height: 80px;
+  border: 1px solid #ececec;
 }
 
 .global-header a {
@@ -133,6 +134,27 @@ li {
 .main-navigation a:hover,
 .main-navigation a:focus {
   color: var(--link-active-color);
+}
+
+.main-navigation-adress li:hover,
+.main-navigation-adress li svg:hover {
+  color: var(--link-active-color);
+  fill: #2196f3;
+}
+
+.envelope-icon svg {
+  fill: #757575;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.smartphone-icon {
+  fill: #757575;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-content: center;
 }
 
 /*Sections*/
@@ -256,15 +278,15 @@ h5 {
 }
 
 .filter-background {
-  background: var(--info-section-color);
-  border-top: 1px solid #ececec;
+  background: #ffffff;
 }
 
 .filter-button:hover {
   background-color: var(--link-active-color);
   color: #ffffff;
-  box-shadow: 4px 8px 3px rgba(0, 0, 0, 0.12), 3px 6px 1px rgba(0, 0, 0, 0.14),
-    2px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .filter-menu ul {
@@ -406,7 +428,7 @@ h5 {
 }
 
 .social-links a {
-  color: #afb1b8;
+  fill: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,16 +437,40 @@ h5 {
   border-radius: 100%;
 }
 
+.find-us-icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.find-us-icon a {
+  fill: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+
+.find-us-icon a:hover,
+.find-us-icon a:focus {
+  cursor: pointer;
+  background: #2196f3;
+}
+
+.find-us-social-links {
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-links a:hover,
 .social-links a:focus {
   cursor: pointer;
   fill: #ffffff;
   background: #2196f3;
-}
-
-.social-links svg:hover,
-.social-links svg:focus {
-  color: #ffffff;
 }
 
 .team-heading {
@@ -445,8 +491,8 @@ h5 {
 }
 
 .capabilities li:hover {
-  box-shadow: 4px 8px 3px rgba(0, 0, 0, 0.12), 3px 6px 1px rgba(0, 0, 0, 0.14),
-    2px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -519,7 +565,11 @@ h5 {
   border: 1px solid #2196f3;
 }
 
-.clienti-logo svg use:hover {
+.clienti-icons {
+  fill: #afb1b8;
+}
+
+.clienti-icons:hover {
   fill: #2196f3;
 }
 
